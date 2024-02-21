@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		DE2D246C2B7CD73B00982279 /* TCADemoArchitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2D246B2B7CD73B00982279 /* TCADemoArchitectureApp.swift */; };
-		DE2D246E2B7CD73B00982279 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2D246D2B7CD73B00982279 /* ContentView.swift */; };
 		DE2D24702B7CD74000982279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2D246F2B7CD74000982279 /* Assets.xcassets */; };
 		DE2D24732B7CD74000982279 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2D24722B7CD74000982279 /* Preview Assets.xcassets */; };
 		DE2D247B2B7CDC9700982279 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DE2D247A2B7CDC9700982279 /* ComposableArchitecture */; };
 		DE2D247D2B7CDF0D00982279 /* CounterFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2D247C2B7CDF0D00982279 /* CounterFeature.swift */; };
 		DE2D247F2B7E367B00982279 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2D247E2B7E367B00982279 /* CounterView.swift */; };
-		DE798DF72B850A0B00C2D326 /* TCADemoArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE798DF62B850A0B00C2D326 /* TCADemoArchitectureTests.swift */; };
 		DE798DFE2B850A6A00C2D326 /* CounterFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE798DFD2B850A6A00C2D326 /* CounterFeatureTest.swift */; };
 		DE798E032B86112800C2D326 /* NumberFactClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE798E022B86112800C2D326 /* NumberFactClient.swift */; };
+		DE798E092B864F0800C2D326 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE798E082B864F0800C2D326 /* AppTabView.swift */; };
+		DE798E0B2B86648B00C2D326 /* AppTabFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE798E0A2B86648B00C2D326 /* AppTabFeature.swift */; };
+		DE798E0D2B866C8C00C2D326 /* AppTabFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE798E0C2B866C8C00C2D326 /* AppTabFeatureTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,16 +33,17 @@
 /* Begin PBXFileReference section */
 		DE2D24682B7CD73B00982279 /* TCADemoArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCADemoArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2D246B2B7CD73B00982279 /* TCADemoArchitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCADemoArchitectureApp.swift; sourceTree = "<group>"; };
-		DE2D246D2B7CD73B00982279 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE2D246F2B7CD74000982279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE2D24722B7CD74000982279 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE2D247C2B7CDF0D00982279 /* CounterFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeature.swift; sourceTree = "<group>"; };
 		DE2D247E2B7E367B00982279 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		DE2D24802B7E7E5800982279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DE798DF42B850A0B00C2D326 /* TCADemoArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCADemoArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE798DF62B850A0B00C2D326 /* TCADemoArchitectureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCADemoArchitectureTests.swift; sourceTree = "<group>"; };
 		DE798DFD2B850A6A00C2D326 /* CounterFeatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterFeatureTest.swift; sourceTree = "<group>"; };
 		DE798E022B86112800C2D326 /* NumberFactClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFactClient.swift; sourceTree = "<group>"; };
+		DE798E082B864F0800C2D326 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		DE798E0A2B86648B00C2D326 /* AppTabFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabFeature.swift; sourceTree = "<group>"; };
+		DE798E0C2B866C8C00C2D326 /* AppTabFeatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabFeatureTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,14 +87,11 @@
 		DE2D246A2B7CD73B00982279 /* TCADemoArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				DE798E072B864EE200C2D326 /* Root */,
+				DE798E0E2B867C9A00C2D326 /* CounterDemo */,
 				DE2D24802B7E7E5800982279 /* Info.plist */,
-				DE2D246B2B7CD73B00982279 /* TCADemoArchitectureApp.swift */,
-				DE2D246D2B7CD73B00982279 /* ContentView.swift */,
 				DE2D246F2B7CD74000982279 /* Assets.xcassets */,
 				DE2D24712B7CD74000982279 /* Preview Content */,
-				DE2D247C2B7CDF0D00982279 /* CounterFeature.swift */,
-				DE2D247E2B7E367B00982279 /* CounterView.swift */,
-				DE798E022B86112800C2D326 /* NumberFactClient.swift */,
 			);
 			path = TCADemoArchitecture;
 			sourceTree = "<group>";
@@ -108,8 +107,8 @@
 		DE798DF52B850A0B00C2D326 /* TCADemoArchitectureTests */ = {
 			isa = PBXGroup;
 			children = (
-				DE798DF62B850A0B00C2D326 /* TCADemoArchitectureTests.swift */,
 				DE798DFD2B850A6A00C2D326 /* CounterFeatureTest.swift */,
+				DE798E0C2B866C8C00C2D326 /* AppTabFeatureTest.swift */,
 			);
 			path = TCADemoArchitectureTests;
 			sourceTree = "<group>";
@@ -119,6 +118,50 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE798E042B864E7000C2D326 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				DE798E0A2B86648B00C2D326 /* AppTabFeature.swift */,
+				DE2D247C2B7CDF0D00982279 /* CounterFeature.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		DE798E052B864E8E00C2D326 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE798E082B864F0800C2D326 /* AppTabView.swift */,
+				DE2D247E2B7E367B00982279 /* CounterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE798E062B864EA700C2D326 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				DE798E022B86112800C2D326 /* NumberFactClient.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		DE798E072B864EE200C2D326 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				DE2D246B2B7CD73B00982279 /* TCADemoArchitectureApp.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		DE798E0E2B867C9A00C2D326 /* CounterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DE798E042B864E7000C2D326 /* Store */,
+				DE798E052B864E8E00C2D326 /* View */,
+				DE798E062B864EA700C2D326 /* Environment */,
+			);
+			path = CounterDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +274,9 @@
 			files = (
 				DE798E032B86112800C2D326 /* NumberFactClient.swift in Sources */,
 				DE2D247D2B7CDF0D00982279 /* CounterFeature.swift in Sources */,
-				DE2D246E2B7CD73B00982279 /* ContentView.swift in Sources */,
+				DE798E0B2B86648B00C2D326 /* AppTabFeature.swift in Sources */,
 				DE2D246C2B7CD73B00982279 /* TCADemoArchitectureApp.swift in Sources */,
+				DE798E092B864F0800C2D326 /* AppTabView.swift in Sources */,
 				DE2D247F2B7E367B00982279 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE798DF72B850A0B00C2D326 /* TCADemoArchitectureTests.swift in Sources */,
+				DE798E0D2B866C8C00C2D326 /* AppTabFeatureTest.swift in Sources */,
 				DE798DFE2B850A6A00C2D326 /* CounterFeatureTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
