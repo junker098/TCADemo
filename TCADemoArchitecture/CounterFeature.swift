@@ -14,6 +14,7 @@ struct CounterFeature {
         var count = 0
         var fact: String?
         var isLoading = false
+        var isTimerRunning = false
     }
     
     enum Action {
@@ -22,7 +23,13 @@ struct CounterFeature {
         case resetButtonTapped
         case factButtonTapped
         case factResponse(String)
+        case toggleTimerButtonTapped
+        case timerTick
     }
+    
+    enum CancelID { case timer}
+    
+    @Dependency(\.numberFact) var numberFact
     
     var body: some ReducerOf<Self> {
         Reduce { state, action in
@@ -43,17 +50,31 @@ struct CounterFeature {
                 state.isLoading = true
                 state.fact = nil
                 return .run { [count = state.count] send in
-                    if let url = URL(string: "http://numbersapi.com/\(count)") {
-                        let (data, _) = try await URLSession.shared.data(from: url)
-                        let fact = String(decoding: data, as: UTF8.self)
-                        await send(.factResponse(fact))
-                    }
+                    let fact =  try await numberFact.fetch(count)
+                    await send(.factResponse(fact))
                 }
             case .factResponse(fact: let fact):
                 state.fact = fact
                 state.isLoading = false
                 return .none
+            case .toggleTimerButtonTapped:
+                state.isTimerRunning.toggle()
+                if state.isTimerRunning {
+                    return .run { send in
+                        while true {
+                            try await Task.sleep(for: .seconds(1))
+                            await send(.timerTick)
+                        }
+                    }
+                    .cancellable(id: CancelID.timer)
+                } else {
+                    return .cancel(id: CancelID.timer)
+                }
+            case .timerTick:
+                state.count += 1
+                state.fact = nil
+                return .none
             }
-         }
+        }
     }
 }
